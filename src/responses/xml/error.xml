@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<exampleResponse>
+			<status>
+				<code>999</code>
+				<result>ERROR</result>
+				<message>ERROR</message>
+			</status>
+		</exampleResponse>
+	</soapenv:Body>
+</soapenv:Envelope>

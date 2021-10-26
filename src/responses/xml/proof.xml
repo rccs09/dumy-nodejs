@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<exampleResponse>
+            <field1>Field 1 value</field1>
+            <field2>Field 2 value</field2>
+			<status>
+				<code>0</code>
+				<result>SUCCESS</result>
+				<message> SUCCESS</message>
+			</status>
+            <fieldN>Field N value</fieldN>
+		</exampleResponse>
+	</soapenv:Body>
+</soapenv:Envelope>

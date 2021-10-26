@@ -1,0 +1,8 @@
+{
+    "field1": "field1 value",
+    "field2": "field2 value",
+    "status": {
+        "result": "OK"
+    },
+    "fieldN": "fieldN value"
+}
