@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<response>
+			<status>
+				<code>992</code>
+				<result>ERROR</result>
+				<message>The 'serviceNameTag' defined for the dummy of this service in the 'connfigDummy.json' file was not found in the 'request.body'</message>
+			</status>
+		</response>
+	</soapenv:Body>
+</soapenv:Envelope>

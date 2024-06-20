@@ -1,0 +1,23 @@
+module.exports = Object.freeze({
+    DUMMY_PORT : 3001,
+    PROXY_PORT : 3021,
+    TYPE_KEY : 'Content-Type',
+    TYPE_JSON : 'json',
+    TYPE_XML : 'xml',
+    APPLICATION_JSON : 'application/json',
+    TEXT_XML : 'text/xml',
+    STATUS_ERROR : 500,
+    XML_ERROR_FILE : 'xml/constants/rsError.xml',
+    XML_ERROR_CT_FILE : 'xml/constants/rsContentFileError.xml',
+    XML_ERROR_DUMMY_PATH_FILE : 'xml/constants/rsDummyPathError.xml',
+    XML_ERROR_SERVICE_ID_TAG_FILE : 'xml/constants/rsServiceIdTagError.xml',
+    JSON_ERROR_FILE : 'json/constants/rsError.json',
+    JSON_ERROR_CT_FILE : 'json/constants/rsContentFileError.json',
+    JSON_ERROR_DUMMY_PATH_FILE : 'json/constants/rsDummyPathError.json',
+    JSON_ERROR_SERVICE_ID_TAG_FILE : 'json/constants/rsServiceIdTagError.json',
+    ERROR_CT:"990",
+    ERROR_DUMMY_PATH:"991",
+    ERROR_SERVICE_ID_TAG:"992",
+    ERROR_GENERAL:"999",
+    DUMMY_SERVER_NAME :'DUMMY'
+});

@@ -1,0 +1,10 @@
+{
+    "testCase":"Example of a GET service with parameters at the URL level",
+    "field1": "Value of s1Field1 - Dummy",
+    "field2": "Value of s1Field2 - Dummy",
+    "status":{
+        "code":"OK",
+        "result":"successful execution",
+        "message": "Response generated from dummy"
+    }
+}

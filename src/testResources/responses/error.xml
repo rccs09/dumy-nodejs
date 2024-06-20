@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<response>
+			<status>
+				<code>999</code>
+				<result>ERROR</result>
+				<message>Service not found on Server Test</message>
+			</status>
+		</response>
+	</soapenv:Body>
+</soapenv:Envelope>

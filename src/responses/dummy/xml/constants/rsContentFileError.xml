@@ -1,12 +1,12 @@
 <soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 	<soapenv:Header />
 	<soapenv:Body>
-		<exampleResponse>
+		<response>
 			<status>
-				<code>999</code>
+				<code>990</code>
 				<result>ERROR</result>
-				<message>ERROR</message>
+				<message>Unsupported Content-type, allowed Content-types are: 'application/json', 'application/xml' and 'text/xml'</message>
 			</status>
-		</exampleResponse>
+		</response>
 	</soapenv:Body>
 </soapenv:Envelope>

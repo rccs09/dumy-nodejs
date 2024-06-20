@@ -1,0 +1,20 @@
+{
+    "servers": 
+        [
+            {
+                "server":"DUMMY",
+                "URL":"http://localhost:3001",
+                "path":"/",
+                "serviceIdTag":"",
+                "encode":"text/xml"
+            },
+            {
+                "server":"TEST_SERVER",
+                "URL":"http://localhost:3011",
+                "path":"/TEST_SERVER",
+                "serviceIdTag":"serviceName",
+                "encode":"text/xml"
+            }       
+        ]
+    
+}

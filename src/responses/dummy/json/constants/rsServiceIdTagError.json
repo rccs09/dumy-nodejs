@@ -1,0 +1,7 @@
+{
+    "error": {
+        "code":"992",
+        "result":"ERROR",
+        "message": "The 'serviceNameTag' defined for the dummy of this service in the 'connfigDummy.json' file was not found in the 'request.body'"
+    }
+}

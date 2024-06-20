@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<soapenv:Header>
+			<sesionId>mySessionId</sesionId>
+			<serviceName>responseServiceTest1</serviceName>
+		</soapenv:Header>
+		<response>
+            <service1Field1>Field 1 value generate by service1 on DUMMY</service1Field1>
+			<service1Field2>Field 2 value generate by service1 on DUMMY</service1Field2>
+			<status>
+				<code>0</code>
+				<result>SUCCESS</result>
+				<message> SUCCESS</message>
+			</status>
+		</response>
+	</soapenv:Body>
+</soapenv:Envelope>

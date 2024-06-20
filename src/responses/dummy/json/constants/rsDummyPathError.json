@@ -1,0 +1,7 @@
+{
+   "error": {
+        "code":"991",
+        "result":"ERROR",
+        "message":  "There is no dummy response 'responsePath' defined for the service being consumed"
+    }
+}

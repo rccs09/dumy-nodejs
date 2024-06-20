@@ -2,14 +2,11 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<exampleResponse>
-            <field1>Field 1 value</field1>
-            <field2>Field 2 value</field2>
 			<status>
-				<code>0</code>
-				<result>SUCCESS</result>
-				<message> SUCCESS</message>
+				<code>999</code>
+				<result>ERROR</result>
+				<message>An error was generated during the process....</message>
 			</status>
-            <fieldN>Field N value</fieldN>
 		</exampleResponse>
 	</soapenv:Body>
 </soapenv:Envelope>
