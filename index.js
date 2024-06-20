@@ -1,16 +1,20 @@
-const express = require('express');
-const xmlparser = require('express-xml-bodyparser');
-const ResponseProcess = require('./src/helpers/ResponseProcess');
+const Dummy = require('./src/helpers/Dummy');
+const Proxy = require('./src/helpers/Proxy');
+const Constants = require('./src/config/general/constants');
 
-const app = express();
-app.use(express.json())
-app.use(xmlparser())
-const port = 3000;
+const dummy = new Dummy();
+const appDummy = dummy.getDummyServer();
 
-let responseProcess = new ResponseProcess(`${__dirname}/src/responses/`);
-app.get('*', responseProcess.getResponse);
-app.post('*', responseProcess.getResponse);
 
-app.listen(port, '0.0.0.0',  () => {
-    console.log(`Iniciado el servidor en el puerto ${port}`);
+//levanta el dummy
+appDummy.listen(Constants.DUMMY_PORT, '0.0.0.0',  () => {
+    console.log(`Se ha levantado el servidor de DUMMY en el puerto ${Constants.DUMMY_PORT}`);
+});
+
+
+//levanta el proxy
+const proxy = new Proxy();
+const appProxy = proxy.getProxy();
+appProxy.listen(Constants.PROXY_PORT, '0.0.0.0',  () => {
+    console.log(`Se ha levantado el servidor de PROXY en el puerto ${Constants.PROXY_PORT}`);
 });

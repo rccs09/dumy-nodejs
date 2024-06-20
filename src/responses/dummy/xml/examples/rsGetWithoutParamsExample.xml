@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<response>
+            <testCase>Example of a GET service without parameters</testCase>
+            <s1Field1>Original value of s1Field1 - Dummy</s1Field1>
+			<s1Field2>Original value of s1Field2 - Dummy</s1Field2>
+			<status>
+				<code>0</code>
+				<result>SUCCESS</result>
+				<message> Response generated from dummy</message>
+			</status>
+		</response>
+	</soapenv:Body>
+</soapenv:Envelope>

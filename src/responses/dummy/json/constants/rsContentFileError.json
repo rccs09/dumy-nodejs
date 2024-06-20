@@ -1,0 +1,7 @@
+{
+   "error": {
+        "code":"990",
+        "result":"ERROR",
+        "message": "Unsupported Content-type, allowed Content-types are: 'application/json', 'application/xml' and 'text/xml'"
+    }
+}

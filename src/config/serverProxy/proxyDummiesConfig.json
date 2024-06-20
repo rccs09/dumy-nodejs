@@ -1,0 +1,13 @@
+{
+    "serverDummies": 
+        [
+            {
+                "path":"/TEST_SERVER",
+                "serviceId":[
+                    "testServerService1",
+                    "testServerService2"
+                ]
+            }       
+        ]
+    
+}

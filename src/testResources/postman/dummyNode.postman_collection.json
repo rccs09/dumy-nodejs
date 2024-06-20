@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "788c64ef-c719-4680-9125-9b38b814618d",
+		"name": "dummyNode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "examplesDumy",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "json",
+							"item": [
+								{
+									"name": "getWithParams-json",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/json/getWithParams?param1=value1&param2=value2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"json",
+												"getWithParams"
+											],
+											"query": [
+												{
+													"key": "param1",
+													"value": "value1"
+												},
+												{
+													"key": "param2",
+													"value": "value2"
+												}
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL sends parameters after the '?' character"
+									},
+									"response": []
+								},
+								{
+									"name": "getWithoutParams-json",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/json/getWithoutParams",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"json",
+												"getWithoutParams"
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL does not send parameters and does not contain the '?' character"
+									},
+									"response": []
+								},
+								{
+									"name": "getWithUrlParams-json",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/json/user/Jhon/address/Miami",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"json",
+												"user",
+												"Jhon",
+												"address",
+												"Miami"
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL sends parameters in tags within the same url.\nFor example, the following URL 'http://localhost:3001/mydomain/json/user/Jhon/address/Miami' sends the parameters 'user' and 'address'"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "xml",
+							"item": [
+								{
+									"name": "getWithoutParams-xml",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/xml",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/xml/getWithoutParams",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"xml",
+												"getWithoutParams"
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL does not send parameters and does not contain the '?' character"
+									},
+									"response": []
+								},
+								{
+									"name": "getWithParams-xml",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/xml"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/xml/getWithParams?param1=value1&param2=value2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"xml",
+												"getWithParams"
+											],
+											"query": [
+												{
+													"key": "param1",
+													"value": "value1"
+												},
+												{
+													"key": "param2",
+													"value": "value2"
+												}
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL does not send parameters and does not contain the '?' character"
+									},
+									"response": []
+								},
+								{
+									"name": "getWithUrlParams-xml",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/xml"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3001/mypath/xml/user/Jhon/address/Miami",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"xml",
+												"user",
+												"Jhon",
+												"address",
+												"Miami"
+											]
+										},
+										"description": "Example of GET service with parameters.\nThe service URL sends parameters in tags within the same url.\nFor example, the following URL 'http://localhost:3001/mydomain/json/user/Jhon/address/Miami' sends the parameters 'user' and 'address'."
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "json",
+							"item": [
+								{
+									"name": "postOnlyPath-json",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"header\": {\n\t\t\"sesionId\": \"mySessionId\",\n\t\t\"serviceId\": \"myServiceName\"\n\t},\n    \"request\": {\n\t\t\"dataInfo\": \"data info example\",\n\t\t\"otherData\": \"other data example\"\n\t}\n}"
+										},
+										"url": {
+											"raw": "http://localhost:3001/MYSERVER1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"MYSERVER1"
+											]
+										},
+										"description": "Service that exposes a single URL and the service that is consumed depends on a parameter in the request.\nFor this example, the exposed URL is: 'http://localhost:3001/MYSERVER2', and the service to be consumed is defined in the tag: 'serviceId'"
+									},
+									"response": []
+								},
+								{
+									"name": "postSpecificUrl-json",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"request\": {\n\t\t\"header\": {\n\t\t\t\"sesionId\": \"mySessionId\",\n            \"serviceName\": \"myServiceName\"\n\t\t},\n\t\t\"body\": {\n\t\t\t\t\"dataInfo\": \"data info example\",\n                \"otherData\":\"other data example\"\n\t\t}\n\t}\n}"
+										},
+										"url": {
+											"raw": "http://localhost:3001/mypath/json/post/specific/service",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"json",
+												"post",
+												"specific",
+												"service"
+											]
+										},
+										"description": "Example of POST service with an specific URL."
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "xml",
+							"item": [
+								{
+									"name": "postOnlyPath-service1-xml",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/xml"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService1</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+										},
+										"url": {
+											"raw": "http://localhost:3001/TEST_SERVER",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"TEST_SERVER"
+											]
+										},
+										"description": "Service that exposes a single URL and the service that is consumed depends on a parameter in the request.\nFor this example, the exposed URL is: 'http://localhost:3001/MYSERVER1', and the service to be consumed is defined in the tag: '<serviceName>'"
+									},
+									"response": []
+								},
+								{
+									"name": "postSpecificUrl-xml",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/xml"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>myServiceName</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+										},
+										"url": {
+											"raw": "http://localhost:3001/mypath/xml/post/specific/service",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"mypath",
+												"xml",
+												"post",
+												"specific",
+												"service"
+											]
+										},
+										"description": "Service that exposes a single URL and the service that is consumed depends on a parameter in the request.\nFor this example, the exposed URL is: 'http://localhost:3001/MYSERVER1', and the service to be consumed is defined in the tag: '<serviceName>'"
+									},
+									"response": []
+								},
+								{
+									"name": "postOnlyPath-service2-xml",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/xml"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService2</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+										},
+										"url": {
+											"raw": "http://localhost:3001/TEST_SERVER",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3001",
+											"path": [
+												"TEST_SERVER"
+											]
+										},
+										"description": "Service that exposes a single URL and the service that is consumed depends on a parameter in the request.\nFor this example, the exposed URL is: 'http://localhost:3001/MYSERVER1', and the service to be consumed is defined in the tag: '<serviceName>'"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "serverTest",
+			"item": [
+				{
+					"name": "service1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "text/xml; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService1</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+						},
+						"url": {
+							"raw": "http://localhost:3011/TEST_SERVER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3011",
+							"path": [
+								"TEST_SERVER"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "text/xml; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService2</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+						},
+						"url": {
+							"raw": "http://localhost:3011/TEST_SERVER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3011",
+							"path": [
+								"TEST_SERVER"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "text/xml; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService3</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+						},
+						"url": {
+							"raw": "http://localhost:3011/TEST_SERVER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3011",
+							"path": [
+								"TEST_SERVER"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "examplesProxy",
+			"item": [
+				{
+					"name": "serverTest",
+					"item": [
+						{
+							"name": "service1ProxyToDummy",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService1</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+								},
+								"url": {
+									"raw": "http://localhost:3021/TEST_SERVER",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3021",
+									"path": [
+										"TEST_SERVER"
+									]
+								},
+								"description": "Consumes service 'responseServiceTest1' from server 'serverTest', passing through the proxy.\nSince the service 'responseServiceTest1' is defined in the DUMMY, it will return the response configured in the dummy."
+							},
+							"response": []
+						},
+						{
+							"name": "service2ProxyToDummy",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService2</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+								},
+								"url": {
+									"raw": "http://localhost:3021/TEST_SERVER",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3021",
+									"path": [
+										"TEST_SERVER"
+									]
+								},
+								"description": "Consumes service 'responseServiceTest2' from server 'serverTest', passing through the proxy.\nSince the service 'responseServiceTest2' is defined in the DUMMY, it will return the response configured in the dummy."
+							},
+							"response": []
+						},
+						{
+							"name": "service3ProxyToServerTest",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n\t<soapenv:Header>\n        <sesionId>mySessionId</sesionId>\n        <serviceName>testServerService3</serviceName>\n    </soapenv:Header>\n\t<soapenv:Body>\n\t\t<request>\n            <dataInfo>data info example</dataInfo>\n            <otherData>other data example</otherData>\n\t\t</request>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+								},
+								"url": {
+									"raw": "http://localhost:3021/TEST_SERVER",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3021",
+									"path": [
+										"TEST_SERVER"
+									]
+								},
+								"description": "Consumes service 'responseServiceTest3' from server 'serverTest', passing through the proxy.\nSince the service 'responseServiceTest3' is NOT defined in the DUMMY, it will go to 'ServerTest' and return the response from this server."
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

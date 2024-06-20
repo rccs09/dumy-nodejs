@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<response>
+			<status>
+				<code>991</code>
+				<result>ERROR</result>
+				<message>There is no dummy response 'responsePath' defined for the service being consumed</message>
+			</status>
+		</response>
+	</soapenv:Body>
+</soapenv:Envelope>
